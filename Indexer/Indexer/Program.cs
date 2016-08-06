@@ -11,10 +11,11 @@ namespace Indexer
         static void Main(string[] args)
         {
             DerivedClass instance = new DerivedClass();
+            BaseClass baseInstance = instance;
 
             for (int i = 0; i < 2; i++)
             {
-                Console.WriteLine(instance[i]);
+                Console.WriteLine(baseInstance[i]);
             }
         }
     }
