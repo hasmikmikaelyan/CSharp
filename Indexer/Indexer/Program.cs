@@ -10,6 +10,12 @@ namespace Indexer
     {
         static void Main(string[] args)
         {
+            DerivedClass instance = new DerivedClass();
+
+            for (int i = 0; i < 2; i++)
+            {
+                Console.WriteLine(instance[i]);
+            }
         }
     }
 }
